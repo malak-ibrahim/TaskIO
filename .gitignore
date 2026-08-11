@@ -1,0 +1,12 @@
+node_modules/
+allure-results/
+allure-report/
+.allure/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+*.log
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/

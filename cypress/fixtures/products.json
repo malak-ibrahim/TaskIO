@@ -1,0 +1,10 @@
+{
+  "expectedCatalogue": [
+    { "id": 1, "name": "iPhone 14 Pro", "price": 999.99, "stock": 50, "brand": "Apple", "category": "smartphones" },
+    { "id": 2, "name": "Samsung Galaxy S23", "price": 799.99, "stock": 30, "brand": "Samsung", "category": "smartphones" },
+    { "id": 3, "name": "MacBook Pro 16\"", "price": 2499.99, "stock": 15, "brand": "Apple", "category": "laptops" },
+    { "id": 4, "name": "Sony WH-1000XM4", "price": 349.99, "stock": 75, "brand": "Sony", "category": "headphones" },
+    { "id": 5, "name": "iPad Air 5th Gen", "price": 599.99, "stock": 40, "brand": "Apple", "category": "tablets" },
+    { "id": 6, "name": "Dell XPS 13", "price": 1299.99, "stock": 25, "brand": "Dell", "category": "laptops" }
+  ]
+}

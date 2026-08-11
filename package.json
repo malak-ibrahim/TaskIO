@@ -1,0 +1,36 @@
+{
+  "name": "techmart-add-to-cart-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end Cypress suite (Page Object Model + Allure) covering the TechMart Add to Cart flow across UI and Supabase REST APIs.",
+  "scripts": {
+    "cy:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run",
+    "cy:run:ui": "cypress run --spec \"cypress/e2e/ui/**/*.cy.js\"",
+    "cy:run:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "cy:run:headed": "cypress run --headed --browser chrome",
+    "cy:run:defects": "cypress run --spec \"cypress/e2e/defects/**/*.cy.js\" --config excludeSpecPattern=cypress/e2e/nothing.cy.js",
+    "cy:run:all": "cypress run --spec \"cypress/e2e/**/*.cy.js\" --config excludeSpecPattern=cypress/e2e/nothing.cy.js",
+    "clean:allure": "rimraf allure-results allure-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "test": "npm run clean:allure && npm run cy:run",
+    "test:allure": "npm run test && npm run allure:generate && npm run allure:open"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "page-object-model",
+    "allure",
+    "supabase"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "allure-commandline": "^2.34.1",
+    "allure-cypress": "^3.4.2",
+    "allure-js-commons": "^3.4.2",
+    "cypress": "^14.5.4",
+    "rimraf": "^6.0.1"
+  }
+}
